@@ -8,3 +8,44 @@
 html{
     font-size: 62.5%;
 }
+nav{
+    height: 44px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+nav #nav-logo{
+    margin: 1rem 0rem 1rem 1.6rem ;
+    height: 24px;
+    width: 24px;
+    
+}
+nav #nav-solidBar{
+    margin: 1.6rem 1.9rem;
+    height: 12px;
+    width: 18px;
+}
+nav .navbarRight{
+    display: display;
+    width: 320px;
+}
+nav .navbarRight ul{
+    
+    list-style: none;
+    height: 224px;
+    width: 100%;
+    background-color: #0000EC;
+    z-index: 1; 
+    padding: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+nav .navbarRight ul li{
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #FFFFFF;
+ 
+}
