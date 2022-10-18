@@ -3,67 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, home-scale=1.0">
     <title>Podcast Channel</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/brands.min.css" integrity="sha512-+oRH6u1nDGSm3hH8poU85YFIVTdSnS2f+texdPGrURaJh8hzmhMiZrQth6l56P4ZQmxeZzd2DqVEMqQoJ8J89A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./styles/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <header>
-        <a href="/">
-            <img id="nav-logo" src="./images/logo.svg" alt="bd logo">
-        </a>
-         <nav id="nav-bar">
-        <div class="navbarRight">
-            <ul>
+    <header id="nav">
+        <a href="/"><img class="nav__logo" src="./images/sCodeH_light-noBackGriund.png" alt="sCodeH logo"></a>
+    
+        <input type="checkbox" id="nav__checkbox" class="nav__checkbox">
+        <label for="nav__checkbox" class="nav__toggle">
+            <i class="fa-solid fa-bars menu"></i>
+            <i class="fa-solid fa-xmark close"></i>
+        </label>
+        <nav class="nav__section">
+            <ul class="nav__menu">
                 <li><a href="#">Episodios</a></li>
                 <li><a href="#">Nosotros</a></li>
                 <li><a href="#">Entrevistas</a></li>
                 <li><a href="#">T&oacute;picos</a></li>
             </ul>
-        </div>
-    </nav>
+    
+        </nav>
     </header>
-   
-    <section id="initial">
-        <h1 class="initial-tittle">Hello <span class="initial-cross-word">world</span>  pale blue dot.</h1>
-        <p class="initial-paragraph">Un podcast que explora el mundo de la programaci&oacute;n. Nuevos episodios, todos los jueves cada 15 d&iacute;s.</p>
-        <a class="initial-know-more" href="#">Conoc&eacute; m&aacute;s</a>
-    </section>
-    <section id="episodes">
-        <h2 class="episodes-tittle">Episodios</h2>
-        <img src="./images/embed1_.png" alt="Its just JavaScript podcast">
-        <img src="./images/embed2_.png" alt="The fundamentals podcast">
-        <img src="./images/embed3.png" alt="The open office podcast">
-        <img src="./images/embed3_.png" alt="The ruby on rails podcast">
-        <img src="./images/phone.png" alt="Phoene with an image">
-    </section>
-    <section id="about-us">
-        <h2 class="about-us-tittle">De d&oacute;nde venimos</h2>
-        <p>Our posturings, our imagined self-importance, the delusion that we have some privileged position in the Universe, are challenged by this point of pale light. <br>
-        Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this vastness, there is no hint that help will come from elsewhere to save us from ourselves.</p>
-    </section>
-    <section id="guests">
-        <h2 class="guests-tittle">Invitadas/os estelares </h2>
-        <img src="./images/grace-hopper.png" alt="">
-        <img src="./images/Katie-Bouman.png" alt="">
-        <img src="./images/Margaret_Hamilton.png" alt="">
-        <img src="./images/An E.R.A.Univac 1103 computer in the 1950s.png" alt="">
-        <img src="./images/Computer operators with an Eniac — the world’s first programmable general-purpose computer.png" alt="">
-        <img src="./images/susan-kare.png" alt="">
-        </section>
-    <section id="topics">
-        <h2 class="topics-tittle">Algunos de nuestros temas</h2>
-        <img src="./images/icon1.svg" alt="">
-        <h3>Trabajo remoto</h3>
-        <img src="./images/icon2.svg" alt="">
-        <h3>Repensando la programaci&oacute;n</h3>
-        <img src="./images/icon3.svg" alt="">
-        <h3>Bases del c&oacute;digo</h3>
-        <img src="/images/icon4.svg" alt="">
-        <h3></h3>
-    </section>
-    <section id="news"></section>
-    <footer></footer>
+   <main>
+       <section id="home">
+           <h1 class="home__tittle">Hello <span class="home__cross_word">world</span>  pale blue dot.</h1>
+           <p class="home__paragraph">Un podcast que explora el mundo de la programaci&oacute;n. Nuevos episodios, todos los jueves cada 15 d&iacute;s.</p>
+           <a class="home__btn" href="#">Conoc&eacute; m&aacute;s</a>
+       </section>
+       <!-- <section id="episodes">
+           <h2 class="episodes-tittle">Episodios</h2>
+           <img src="./images/embed1_.png" alt="Its just JavaScript podcast">
+           <img src="./images/embed2_.png" alt="The fundamentals podcast">
+           <img src="./images/embed3.png" alt="The open office podcast">
+           <img src="./images/embed3_.png" alt="The ruby on rails podcast">
+           <img src="./images/phone.png" alt="Phoene with an image">
+       </section>
+       <section id="about-us">
+           <h2 class="about-us-tittle">De d&oacute;nde venimos</h2>
+           <p>Our posturings, our imagined self-importance, the delusion that we have some privileged position in the Universe, are challenged by this point of pale light. <br>
+           Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this vastness, there is no hint that help will come from elsewhere to save us from ourselves.</p>
+       </section>
+       <section id="guests">
+           <h2 class="guests-tittle">Invitadas/os estelares </h2>
+           <img src="./images/grace-hopper.png" alt="">
+           <img src="./images/Katie-Bouman.png" alt="">
+           <img src="./images/Margaret_Hamilton.png" alt="">
+           <img src="./images/An E.R.A.Univac 1103 computer in the 1950s.png" alt="">
+           <img src="./images/Computer operators with an Eniac — the world’s first programmable general-purpose computer.png" alt="">
+           <img src="./images/susan-kare.png" alt="">
+       </section>
+       <section id="topics">
+           <h2 class="topics-tittle">Algunos de nuestros temas</h2>
+           <img src="./images/icon1.svg" alt="">
+           <h3>Trabajo remoto</h3>
+           <img src="./images/icon2.svg" alt="">
+           <h3>Repensando la programaci&oacute;n</h3>
+           <img src="./images/icon3.svg" alt="">
+           <h3>Bases del c&oacute;digo</h3>
+           <img src="/images/icon4.svg" alt="">
+           <h3></h3>
+       </section>
+       <section id="news"></section> -->
+       <footer></footer>
+   </main>
 </body>
 </html>
