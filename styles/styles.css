@@ -363,3 +363,38 @@ html{
     margin: 3.6rem 1.6rem;
     padding: 1.3rem 4.3rem;
 }
+
+
+#contact{
+    width: 100%;
+    height: 120px;
+    display: flex;
+    gap: 1.6rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact__tittle{
+    margin: 2.4rem 4.6rem 0;
+    font-family: var(--fuenteSecundaria);
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--dark_blue);
+    letter-spacing: 0;
+    line-height: 22px;
+}
+
+.contact__medias{
+    margin: 1.6rem 4.5rem 3.1rem;
+    display: flex;
+    flex-direction: row;
+    gap: 38px;
+    justify-content: space-between;
+}
+
+.contact__medias-logo{
+    display: block;
+    width: 16px;
+    height: 28px;
+}
