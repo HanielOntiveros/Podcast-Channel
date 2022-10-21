@@ -20,55 +20,70 @@
         </label>
         <nav class="nav__section">
             <ul class="nav__menu">
-                <li><a href="#">Episodios</a></li>
-                <li><a href="#">Nosotros</a></li>
-                <li><a href="#">Entrevistas</a></li>
-                <li><a href="#">T&oacute;picos</a></li>
+                <li><a href="#episodes">Episodios</a></li>
+                <li><a href="#about-us">Nosotros</a></li>
+                <li><a href="#guests">Entrevistas</a></li>
+                <li><a href="#topics">T&oacute;picos</a></li>
             </ul>
     
         </nav>
     </header>
    <main>
+       
        <section id="home">
            <h1 class="home__tittle">Hello <span class="home__cross_word">world</span>  pale blue dot.</h1>
-           <p class="home__paragraph">Un podcast que explora el mundo de la programaci&oacute;n. Nuevos episodios, todos los jueves cada 15 d&iacute;s.</p>
-           <a class="home__btn" href="#">Conoc&eacute; m&aacute;s</a>
+           <p class="home__paragraph">Un podcast que explora el mundo de la programaci&oacute;n. Nuevos episodios, todos los jueves cada 15 d&iacute;as.</p>
+           <a class="btn__link home__btn " href="#">Conoc&eacute; m&aacute;s</a>
        </section>
-       <!-- <section id="episodes">
-           <h2 class="episodes-tittle">Episodios</h2>
-           <img src="./images/embed1_.png" alt="Its just JavaScript podcast">
-           <img src="./images/embed2_.png" alt="The fundamentals podcast">
-           <img src="./images/embed3.png" alt="The open office podcast">
-           <img src="./images/embed3_.png" alt="The ruby on rails podcast">
-           <img src="./images/phone.png" alt="Phoene with an image">
-       </section>
-       <section id="about-us">
-           <h2 class="about-us-tittle">De d&oacute;nde venimos</h2>
-           <p>Our posturings, our imagined self-importance, the delusion that we have some privileged position in the Universe, are challenged by this point of pale light. <br>
-           Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this vastness, there is no hint that help will come from elsewhere to save us from ourselves.</p>
-       </section>
+       <section id="episodes">
+           <h2 class="episodes__tittle">Episodios</h2>
+           <div class="episodes__podcast_container">
+               <article class="episodes__podcasts"> <img src="./images/embed1_.png" alt="Its just JavaScript podcast"></article>
+               <article class="episodes__podcasts"> <img src="./images/embed2_.png" alt="The fundamentals podcast"></article>
+               <article class="episodes__podcasts"> <img src="./images/embed3.png" alt="The open office podcast"></article>
+               <article class="episodes__podcasts"><img src="./images/embed3_.png" alt="The ruby on rails podcast "></article>
+            </div>
+        </section>
+        <section id="about-us">
+           <img class="about-us__phone-img" src="./images/phone.png" alt="Phoene with an image">
+           <article class="about-us__article">
+               <h2 class="about-us__tittle">De d&oacute;nde venimos</h2>
+               <p class="about-us__paragraph">Our posturings, our imagined self-importance, the delusion that we have some privileged position in the Universe, are challenged by this point of pale light. <br>
+               Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this vastness, there is no hint that help will come from elsewhere to save us from ourselves.</p>
+            </article>
+        </section>
        <section id="guests">
-           <h2 class="guests-tittle">Invitadas/os estelares </h2>
-           <img src="./images/grace-hopper.png" alt="">
-           <img src="./images/Katie-Bouman.png" alt="">
-           <img src="./images/Margaret_Hamilton.png" alt="">
-           <img src="./images/An E.R.A.Univac 1103 computer in the 1950s.png" alt="">
-           <img src="./images/Computer operators with an Eniac — the world’s first programmable general-purpose computer.png" alt="">
-           <img src="./images/susan-kare.png" alt="">
+           <h2 class="guest__tittle">Invitadas/os estelares </h2>
+           <div class="guest__container">
+               <img class="guest__img" src="./images/grace-hopper.png" alt="Grace hopper">
+               <img class="guest__img" src="./images/Katie-Bouman.png" alt="Katie Bouman">
+               <img class="guest__img" src="./images/Margaret_Hamilton.png" alt="Margaret Hamilton">
+               <img class="guest__img" src="./images/An E.R.A.Univac 1103 computer in the 1950s.png" alt="E.R.A. Univac 103 computer">
+               <img class="guest__img" src="./images/Computer operators with an Eniac — the world’s first programmable general-purpose computer.png" alt="Computer operators with an Eniac">
+               <img class="guest__img" src="./images/susan-kare.png" alt="Susan Kare">
+           </div>
        </section>
        <section id="topics">
-           <h2 class="topics-tittle">Algunos de nuestros temas</h2>
-           <img src="./images/icon1.svg" alt="">
-           <h3>Trabajo remoto</h3>
-           <img src="./images/icon2.svg" alt="">
-           <h3>Repensando la programaci&oacute;n</h3>
-           <img src="./images/icon3.svg" alt="">
-           <h3>Bases del c&oacute;digo</h3>
-           <img src="/images/icon4.svg" alt="">
-           <h3></h3>
+           <h2 class="topics__tittle">Algunos de nuestros temas</h2>
+           <img class="topics__img" src="./images/icon1.svg" alt="Remote work">
+           <h3 class="topics__caption">Trabajo remoto</h3>
+           <img class="topics__img" src="./images/icon2.svg" alt="Thinking about coding">
+           <h3 class="topics__caption">Repensando la programaci&oacute;n</h3>
+           <img class="topics__img" src="./images/icon3.svg" alt="Code substructure">
+           <h3 class="topics__caption">Bases del c&oacute;digo</h3>
+           <img class="topics__img" src="/images/icon4.svg" alt="Informatic security">
+           <h3 class="topics__caption">Seguridad inform&aacute;tica</h3>
        </section>
-       <section id="news"></section> -->
-       <footer></footer>
-   </main>
+    </main>
+    <footer>
+        <section id="news">
+            <h2 class="news__tittle">¿Quer&eacute;s las &uacute;ltimas novedades?</h2>
+            <a class="btn__link news__btn " href="#">Escuch&aacute; los episodios</a>
+        </section>
+        <section class="contact">
+
+        </section>
+
+    </footer>
 </body>
 </html>
