@@ -49,6 +49,11 @@ html{
 
 .close{
     display: none;
+    font-size: 20px;
+}
+
+.menu{
+    font-size: 20px;
 }
 
 .nav__section{
@@ -195,6 +200,7 @@ html{
 }
 
 .episodes__tittle{
+    width: 100%;
     margin: 6.4rem 1.6rem 1.1rem;
     font-family: var(--fuentePrincipal);
     font-size: 36px;
@@ -207,6 +213,7 @@ html{
     width: 100vw;
     display: grid;
     grid-template-columns: 1fr;
+    text-align: center;
 
 }
 
@@ -246,7 +253,7 @@ html{
 }
 
 .about-us__tittle{
-    width: 28.8rem;
+    width: 100%;
     height: 8.8rem;
     font-family: var(--fuentePrincipal);
     font-size: 36px;
@@ -283,7 +290,7 @@ html{
 
 .guest__container{
     width: 100%;
-    height: 1457px;
+    height: auto;
     display: grid;
     grid-template-columns: 1fr;
     gap: 0;
@@ -314,6 +321,10 @@ html{
     line-height: 42px;
 }
 
+.topic__main-container{
+    text-align: center;
+}
+
 .topics__img{
     width: 10.4rem;
     height: 10.4rem;
@@ -339,7 +350,7 @@ html{
     flex-direction: column;
     align-items: center;
     clip-path: polygon(
-        0% 5%,
+        0% 10%,
         100% 0%,
         100% 100%,
         0% 100%
@@ -393,8 +404,82 @@ html{
     justify-content: space-between;
 }
 
+.contact__medias-container{
+    display: flex;
+    flex-direction: row;
+}
+
 .contact__medias-logo{
-    display: block;
-    width: 16px;
-    height: 28px;
+    font-size: 28px;
+}
+
+.contact__media-links{
+    margin-right: 38px;
+}
+
+.right{
+    margin: 0;
+}
+
+@media screen and (min-width:500px){
+    .home__paragraph, .about-us__paragraph {
+        font-size: 16px;
+    }
+    .about-us__tittle{
+        margin-bottom: 1rem;
+    }
+    .guest__img{
+        height: 36.4rem;
+    }
+
+}
+
+@media screen and (min-width:768px){
+    #episodes{
+        height: auto;
+    }
+
+    .episodes__podcast_container{
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 19rem;
+    }
+    .topics__tittle{
+        margin-bottom: 3rem;
+    }
+    .topic__main-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap:2rem;
+    }
+    #news{
+        height: 34rem;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width:1000px){
+    .guest__container{
+        grid-template-columns: repeat(3,1fr);
+    }
+    
+    .topic__main-container{
+        grid-template-columns: repeat(4,1fr);
+    }
+
+    .topics__caption{
+        margin-top: 2.9rem;
+        font-size: 2.3rem;
+    }
+
+    .topics__tittle{
+        width: 100%;
+        margin-left: 7rem;
+    }
+    #contact{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .contact__tittle{
+        margin: 0;
+    }
 }
